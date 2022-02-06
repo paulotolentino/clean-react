@@ -26,24 +26,28 @@ module.exports = {
         test: /\.scss$/,
         use: [
           {
-            laoder: "style-loader",
+            loader: "style-loader",
           },
           {
-            laoder: "css-loader",
+            loader: "css-loader",
             options: {
               modules: true,
             },
           },
           {
-            laoder: "sass-loader",
+            loader: "sass-loader",
           },
         ],
       },
     ],
   },
   devServer: {
-    contentBase: "./public",
-    writeToDisk: true,
+    devMiddleware: {
+      writeToDisk: true,
+    },
+    static: {
+      directory: "./public",
+    },
     historyApiFallback: true,
   },
   externals: {
