@@ -11,8 +11,8 @@ import { Validation } from "@/presentation/protocols/validation";
 import { Authentication } from "@/domain/usecases";
 
 type Props = {
-  validation: Validation;
-  authentication: Authentication;
+  validation?: Validation;
+  authentication?: Authentication;
 };
 
 const Login: React.FC<Props> = ({ validation, authentication }: Props) => {
