@@ -7,4 +7,10 @@ describe("MinLengthValidation", () => {
     const error = sut.validate("123");
     expect(error).toEqual(new MinLengthError(8));
   });
+
+  test("Should return falsy if value is equal or bigger than 6 characters", () => {
+    const sut = new MinLengthValidation("field", 6);
+    const error = sut.validate("1234567");
+    expect(error).toBeFalsy();
+  });
 });
