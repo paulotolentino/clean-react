@@ -1,0 +1,40 @@
+Domain Layer
+	É onde definimos a regra de negócio utilizando abstrações (interfaces)
+
+Data Layer (depende do domain layer)
+	É onde implementamos a interface criada no domain layer e tratamos
+as respostas e erros vindos da requisição à API
+	Definimos também nessa camada o protocolo de comunicação com a API.
+
+Infrastructure Layer (depende do data layer)
+	É onde implementamos o protocolo criado na data layer e utilizamos o
+recurso/biblioteca/framework externo (exemplo axios, porém não é necessário, exemplo fetch)
+
+Presentation Layer (depende do domain layer)
+	É onde criamos o componente visual (UI em jsx ou tsx) e as interface da validation layer
+
+Validation Layer
+	É onde implementamos as abstrações das validações criadas na validation layer
+que serão usadas na UI (Design pattern Composity)
+
+Main Layer (Design Pattern Composition Root e Dependency Injection)
+	É o ponto de entrada, onde acoplamos todas as camadas nela, é necessário para mantermos
+todas as demais camadas o mais desacopladas possível (utilizando Design Pattern Factory)
+
+
+SOLID
+	Single Responsability Principle
+		Retira do componente React varias responsabilidades e implementa
+		classes e interfaces para cada uma dessas responsabilidades
+	Open-Closed Principle
+		Permite adicionar funcionalidades à uma instancia de uma classe sem a
+		necessidade de alterar a classe (Design Patter Decorator)
+	Liskov Substitution Principle
+	Interface Segregation Principle
+		É melhor uma interface para cada funcionalidade ao inves de uma interface
+		com vários métodos.
+	Dependency Inversion Principle
+		Ao inves de um componente da camada A
+		depender de uma classe da camada B, fazemos o componente depender de
+		uma interface da mesma camada (A), e a implementação dessa interface
+		fica na outra camada (B)
