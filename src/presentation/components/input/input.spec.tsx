@@ -2,13 +2,12 @@ import React from "react";
 import faker from "faker";
 import { fireEvent, render, RenderResult } from "@testing-library/react";
 import Context from "@/presentation/contexts/form/form-context";
-import Input from "./input";
+import { Input } from "@/presentation/components";
 
-const makeSut = (fieldName): RenderResult => {
+const makeSut = (fieldName: string): RenderResult => {
   return render(
     <Context.Provider value={{ state: {} }}>
       <Input name={fieldName} />
-      );
     </Context.Provider>
   );
 };
