@@ -1,6 +1,6 @@
-import React, { memo } from "react";
-import Styles from "./login-header-styles.scss";
-import { Logo } from "@/presentation/components";
+import React, { memo } from 'react'
+import Styles from './login-header-styles.scss'
+import { Logo } from '@/presentation/components'
 
 const Header: React.FC = () => {
   return (
@@ -8,7 +8,7 @@ const Header: React.FC = () => {
       <Logo />
       <h1>4Dev - Enquetes para Programadores</h1>
     </header>
-  );
-};
+  )
+}
 
-export default memo(Header);
+export default memo(Header)

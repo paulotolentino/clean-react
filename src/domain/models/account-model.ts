@@ -1,3 +1,3 @@
-export type AccountModel = {
-  accessToken: string;
-};
+export interface AccountModel {
+  accessToken: string
+}
