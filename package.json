@@ -1,7 +1,7 @@
 {
   "name": "clean-react",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "React project create on course to learn Clean Architecture, TDD, DDD, Solid and Design Patters",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --open",
