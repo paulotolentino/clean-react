@@ -1,1 +1,1 @@
-export { AccountModel } from './account-model'
+export * from "./account-model";
