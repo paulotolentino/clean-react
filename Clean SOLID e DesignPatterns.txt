@@ -28,7 +28,7 @@ SOLID
 		classes e interfaces para cada uma dessas responsabilidades
 	Open-Closed Principle
 		Permite adicionar funcionalidades à uma instancia de uma classe sem a
-		necessidade de alterar a classe (Design Patter Decorator)
+		necessidade de alterar a classe (Design Pattern Decorator)
 	Liskov Substitution Principle
 	Interface Segregation Principle
 		É melhor uma interface para cada funcionalidade ao inves de uma interface
@@ -38,3 +38,12 @@ SOLID
 		depender de uma classe da camada B, fazemos o componente depender de
 		uma interface da mesma camada (A), e a implementação dessa interface
 		fica na outra camada (B)
+
+
+Design Patters
+	Adapter
+	Composition Root
+	Composity
+	Decorator
+	Dependency Injection
+	Factory
